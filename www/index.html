@@ -20,12 +20,37 @@
   </head>
   <body ng-app="starter">
 
-    <ion-pane>
-      <ion-header-bar class="bar-stable">
-        <h1 class="title">Ionic Blank Starter</h1>
-      </ion-header-bar>
-      <ion-content>
-      </ion-content>
-    </ion-pane>
+  <ion-view view-title="SocialLogin">
+    <ion-content class="padding login-background">
+        <div class="row login-logo">
+            <div class="col text-center">
+                <img src="img/ionic.png" />
+            </div>
+        </div>
+
+        <div class="row row-center">
+            <div class="col list list-inset login-inputs">
+                <label class="item item-input">
+                    <input type="text" placeholder="Nom d'usuari">
+                </label>
+
+                <label class="item item-input">
+                    <input type="password" placeholder="Contrasenya">
+                </label>
+            </div>
+        </div>
+
+        <div class="text-center p-b-md text-white">
+            No tinc un compte <a class="text-center">REGISTRA'T!</a>
+        </div>
+
+        <div class="col row row-bottom">
+            <button class="button button-block button-balanced">Login</button>
+            <button class="button button-block icon-left ion-social-facebook button-positive">Login amb Facebook</button>
+            <button class="button button-block icon-left ion-social-twitter button-calm">Login amb Twitter</button>
+            <button class="button button-block icon-left ion-social-googleplus button-assertive">Login amb Google+</button>
+        </div>
+    </ion-content>
+  </ion-view>
   </body>
 </html>
