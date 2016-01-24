@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title></title>
 
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
-    <!-- compiled css output -->
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
+    -->
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
@@ -17,14 +20,19 @@
 
     <!-- your app's js -->
     <script src="js/app.js"></script>
-  </head>
-  <body ng-app="starter">
+</head>
+<body ng-app="starter">
 
-  <ion-view view-title="SocialLogin">
-    <ion-content class="padding login-background">
+<ion-pane>
+    <ion-header-bar class="bar-assertive">
+        <h1 class="title">Welcome to TodoList App</h1>
+    </ion-header-bar>
+
+    <ion-content class="padding">
+
         <div class="row login-logo">
             <div class="col text-center">
-                <img src="img/ionic.png" />
+                <img src="img/ToDo-List.png" />
             </div>
         </div>
 
@@ -40,17 +48,16 @@
             </div>
         </div>
 
-        <div class="text-center p-b-md text-white">
-            No tinc un compte <a class="text-center">REGISTRA'T!</a>
-        </div>
-
-        <div class="col row row-bottom">
+        <div class="padding">
             <button class="button button-block button-balanced">Login</button>
-            <button class="button button-block icon-left ion-social-facebook button-positive">Login amb Facebook</button>
-            <button class="button button-block icon-left ion-social-twitter button-calm">Login amb Twitter</button>
-            <button class="button button-block icon-left ion-social-googleplus button-assertive">Login amb Google+</button>
+
+            <div class="button-bar">
+                <a class="button icon-left ion-social-facebook button-positive">Facebook</a>
+                <a class="button icon-left ion-social-twitter button-calm">Twitter</a>
+                <a class="button icon-left ion-social-googleplus button-assertive">Google+</a>
+            </div>
         </div>
     </ion-content>
-  </ion-view>
-  </body>
+</ion-pane>
+</body>
 </html>
